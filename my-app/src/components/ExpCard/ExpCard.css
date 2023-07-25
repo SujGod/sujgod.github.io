@@ -1,0 +1,36 @@
+.card-one,
+.card-two,
+.card-three,
+.card-four {
+  width: 35vmin;
+  height: 17vmin;
+  position: relative;
+  border: 1px solid #fff;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+.card-title,
+.card-subtitle {
+  color: white;
+  font-family: "Anek Latin", sans-serif;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.card-title {
+  font-size: 3vmin;
+  margin-bottom: 2vmin;
+}
+
+.card-subtitle {
+  font-size: 2vmin;
+}
+
+.card-one:hover,
+.card-two:hover,
+.card-three:hover,
+.card-four:hover {
+  opacity: 0.7;
+  background-color: gray;
+}

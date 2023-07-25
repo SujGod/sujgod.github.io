@@ -3,10 +3,9 @@ import { BoxProps } from "./Box.props";
 
 export const Box: React.FC<BoxProps> = ({ message, color }) => {
   return (
-    <div>
-      <p className={`rounded-lg text-lg font-medium bg-red-900 ${color}`}>
-        {message}
-      </p>
+    // create a
+    <div className={`${color} p-4 rounded-lg flex justify-center items-center`}>
+      <p className="rounded-lg text-lg font-medium text-center">{message}</p>
     </div>
   );
 };

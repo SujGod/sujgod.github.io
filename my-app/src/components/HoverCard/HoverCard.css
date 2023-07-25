@@ -1,0 +1,127 @@
+.card-ohio-state {
+  width: 56vmin; /* Adjust the width as needed */
+  height: 75vmin;
+  position: relative;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+
+.card-ohio-state::before {
+  background: linear-gradient(
+    130deg,
+    transparent 0%,
+    transparent 33%,
+    #666666 66%,
+    #bb0000 110%
+  );
+
+  background-size: 300% 300%;
+  background-position: 0% 0%;
+  content: "";
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  transition: background-position 350ms ease, position 350ms ease;
+  width: 100%;
+  z-index: 0;
+}
+
+.card-ohio-state:hover::before {
+  background-position: 100% 100%;
+  transform: scale(1.08, 1.03);
+}
+
+.fade-img {
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.card-ohio-state:hover .fade-img {
+  opacity: 1;
+}
+
+.card-highland:hover .fade-img {
+  opacity: 1;
+}
+
+.card-content {
+  background-position: 0% 0%;
+  background-size: 5vmin 5vmin;
+  height: 100%;
+  position: relative;
+  padding: 5vmin;
+  transition: background-position 350ms ease;
+  width: 100%;
+  z-index: 2;
+}
+
+.card-ohio-state:hover > .card-content {
+  background-position: -10% 0%;
+}
+
+.card-highland {
+  width: 56vmin; /* Adjust the width as needed */
+  height: 75vmin;
+  position: relative;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+
+.card-highland::before {
+  background: linear-gradient(
+    130deg,
+    transparent 0%,
+    transparent 33%,
+    #2f5a46 66%,
+    black 110%
+  );
+
+  background-size: 300% 300%;
+  background-position: 0% 0%;
+  content: "";
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  transition: background-position 350ms ease, position 350ms ease;
+  width: 100%;
+  z-index: 0;
+}
+
+.card-highland:hover::before {
+  background-position: 100% 100%;
+  transform: scale(1.08, 1.03);
+}
+
+.card-content {
+  background-position: 0% 0%;
+  background-size: 5vmin 5vmin;
+  height: 100%;
+  position: relative;
+  padding: 5vmin;
+  transition: background-position 350ms ease;
+  width: 100%;
+  z-index: 2;
+}
+
+.card-highland:hover > .card-content {
+  background-position: -10% 0%;
+}
+
+.card-title,
+.card-subtitle {
+  color: white;
+  font-family: "Anek Latin", sans-serif;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.card-title {
+  font-size: 5vmin;
+  margin-bottom: 2vmin;
+}
+
+.card-subtitle {
+  font-size: 3vmin;
+}

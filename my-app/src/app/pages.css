@@ -1,0 +1,101 @@
+.education-image {
+  height: 100%;
+  width: 100%;
+
+  background-image: url("/grad.jpg");
+
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+
+  background-position: center 25%;
+  background-size: 70vmax;
+  opacity: 0.2;
+
+  transition: opacity 800ms ease, background-size 800ms ease,
+    background-position 800ms ease;
+}
+
+.about-image {
+  height: 100%;
+  width: 100%;
+
+  background-image: url("/aboutMe.jpg");
+
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+
+  background-position: center 40%;
+  background-size: 100vmax;
+  opacity: 0.2;
+
+  transition: opacity 800ms ease, background-size 800ms ease,
+    background-position 800ms ease;
+}
+
+.experience-image {
+  height: 100%;
+  width: 100%;
+
+  background-image: url("/experiencePhoto.jpg");
+
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+
+  background-position: center 25%;
+  background-size: 100vmax;
+  opacity: 0.2;
+
+  transition: opacity 800ms ease, background-size 800ms ease,
+    background-position 800ms ease;
+}
+
+.projects-image {
+  height: 100%;
+  width: 100%;
+
+  background-image: url("/projectPhoto.jpg");
+
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+
+  background-position: center 25%;
+  background-size: 100vmax;
+  opacity: 0.2;
+
+  transition: opacity 800ms ease, background-size 800ms ease,
+    background-position 800ms ease;
+}
+
+header {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+@keyframes fall-in {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.falling-text {
+  display: inline-block;
+}
+
+.falling-text .letter {
+  display: inline-block;
+  animation: fall-in 0.3s ease;
+}
